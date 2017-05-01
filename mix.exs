@@ -37,7 +37,7 @@ defmodule Grove.Mixfile do
   def application(_target) do
     [mod: {Grove.Application, []},
     applications: [:nerves_interim_wifi],
-    extra_applications: [:logger]]
+    extra_applications: [:logger, :inets, :ssl]]
   end
 
   # Dependencies can be Hex packages:
@@ -51,7 +51,6 @@ defmodule Grove.Mixfile do
   # Type "mix help deps" for more examples and options
   def deps do
     [
-      # {:nerves, github: "nerves-project/nerves", override: true, runtime: false},
       {:nerves, "~> 0.5.0", runtime: false},
       {:grovepi, "~> 0.3.0" },
       {:mix_test_watch, "~> 0.3", only: :dev, runtime: false},

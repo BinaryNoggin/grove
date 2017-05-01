@@ -32,6 +32,15 @@ iex(7)> :inet.getif()
 
 In my case the ip is `10.0.1.10`. The `127.0.0.1` is the `lo` interface.
 
+---
+
+Test that the connection to the internet is found and ssl works.
+
+~~~elixir
+iex(8)> {:ok, {status, headers, content}} = :httpc.request 'https://example.com'
+~~~
+
+
 ## Learn more
 
   * Official docs: https://hexdocs.pm/nerves/getting-started.html

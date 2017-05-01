@@ -1,0 +1,4 @@
+config :grove, :wlan0,
+  ssid: "your-ssid",
+  key_mgmt: :"WPA-PSK",
+  psk: "your-password"

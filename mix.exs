@@ -55,6 +55,7 @@ defmodule Grove.Mixfile do
       {:grovepi, "~> 0.3.0" },
       {:mix_test_watch, "~> 0.3", only: :dev, runtime: false},
       {:credo, "~> 0.7", only: [:dev, :test]},
+      {:minimal, path: "/absolute/path/to/minimal"}
    ] ++
     deps(@target)
   end
